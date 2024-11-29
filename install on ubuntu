@@ -10,3 +10,6 @@ sudo apt update && sudo apt install vault
  https://127.0.0.1:8200 
 
 https://127.0.0.1:8200/v1/sys/seal-status              # Check the sever status
+
+
+https://127.0.0.1:8200/ui       #Navigate to the Vault login page 
