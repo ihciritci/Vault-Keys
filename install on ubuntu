@@ -1,4 +1,4 @@
-## https://developer.hashicorp.com/vault/install ##
+                          ## https://developer.hashicorp.com/vault/install ##
 
 
 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
@@ -8,7 +8,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashi
 sudo apt update && sudo apt install vault
 
  https://127.0.0.1:8200 
-
+                           ## https://developer.hashicorp.com/vault/tutorials/get-started/learn-ui   ##
 https://127.0.0.1:8200/v1/sys/seal-status              # Check the sever status
 
 
