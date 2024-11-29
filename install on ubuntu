@@ -13,3 +13,25 @@ https://127.0.0.1:8200/v1/sys/seal-status              # Check the sever status
 
 
 https://127.0.0.1:8200/ui       #Navigate to the Vault login page 
+
+
+## let’s make the Hashicorp Vault configuration file in the /etc/vault directory     ## https://www.virtualizationhowto.com/2021/01/how-to-install-hashicorp-vault-on-ubuntu-20-04/
+
+disable_cache = true
+disable_mlock = true
+ui = true
+listener "tcp" {
+   address          = "0.0.0.0:8200"
+   tls_disable      = 1
+    
+}
+storage "file" {
+   path  = "/var/lib/vault/data"
+ }
+api_addr         = "http://0.0.0.0:8200"
+max_lease_ttl         = "10h"
+default_lease_ttl    = "10h"
+cluster_name         = "vault"
+raw_storage_endpoint     = true
+disable_sealwrap     = true
+disable_printable_check = true
