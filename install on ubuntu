@@ -35,3 +35,12 @@ cluster_name         = "vault"
 raw_storage_endpoint     = true
 disable_sealwrap     = true
 disable_printable_check = true
+
+
+
+
+
+sudo systemctl daemon-reload
+sudo systemctl start vault
+sudo systemctl enable vault
+sudo systemctl status vault
